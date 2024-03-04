@@ -1,15 +1,31 @@
 import { Container } from '@mui/material';
 import './App.css';
-import Login from './Components/Login/Login';
-import Navbar from './Components/Navbar/Navbar';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Navbar from './Components/Navbar/Navbar'
+import Home from './Pages/Home/Home';
+import SignUp from './Pages/Auth/SignUp';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/Signup",
+    element: <SignUp />,
+  },
+
+
+]);
 
 function App() {
+  
   return (
-    <Container>
-      <Navbar />
-<Login/>
-</Container>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App;
+export default App;
