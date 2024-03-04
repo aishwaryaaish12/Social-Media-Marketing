@@ -22,7 +22,7 @@ function LoginForm() {
       <Box sx={{ display: 'flex',width:'100%',justifyContent:'space-around',gap: '3', backgroundColor: '#ABCDCD'}}>
         <Box
           component="img"
-          sx={{ width: '40%',objectFit:'contain' }}
+          sx={{ width: '40%',objectFit:'contain',marginTop:15 }}
           src="/Assets/peoplesocial.png"
           alt="Live from space album cover"
         />
