@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 
-function FrontpageForm() {
+function FrontPageForm() {
 
 
   return (
@@ -39,4 +39,4 @@ function FrontpageForm() {
 
 }
 
-export default FrontpageForm
+export default FrontPageForm

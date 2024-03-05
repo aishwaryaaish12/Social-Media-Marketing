@@ -1,7 +1,8 @@
 import { Box, Stack } from '@mui/material';
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
-import FrontpageForm from '../../Section/Frontpage/FrontpageForm'
+import FrontPageForm from '../../Section/FrontPage/FrontPageForm';
+
 
 function FrontPage() {
   return (
@@ -15,7 +16,7 @@ function FrontPage() {
 >
 <Navbar/>
 
-      <FrontpageForm />
+      <FrontPageForm />
     </Stack>
   )
 }
