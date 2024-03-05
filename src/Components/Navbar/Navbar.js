@@ -46,7 +46,10 @@ function Navbar(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
+            <Link to={`/${item.toLowerCase().replace(/\s/g, '')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+
               <ListItemText primary={item} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -80,12 +83,16 @@ function Navbar(props) {
                 SyncMedia Hub
               </Typography>
             </Box>
+            
             <Box sx={{ display: 'flex', gap: 8, paddingRight: 10 }}>
               {navItems.map((item) => (
                 <Button key={item} sx={{ color: '#000'}}>
+                <Link to={`/${item.toLowerCase().replace(/\s/g, '')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+
                   <Typography sx={{fontWeight:'medium'}}>
                   {item}
                   </Typography>
+                  </Link>
                 </Button>
               ))}
             </Box>

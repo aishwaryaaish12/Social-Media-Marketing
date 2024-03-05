@@ -5,6 +5,7 @@ import Login from '../Auth/Login'
 import SignUp from '../Auth/SignUp'
 import FrontPage from '../FrontPage/FrontPage'
 import Services from '../Services/Services'
+import AboutUs from '../AboutUs/AboutUs'
 function Home() {
 
   return (
@@ -14,6 +15,7 @@ function Home() {
         <SignUp />
         <FrontPage/>
         <Services />
+        <AboutUs />
       
       
     </Box> 

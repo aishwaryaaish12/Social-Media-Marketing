@@ -9,11 +9,13 @@ import Home from './Pages/Home/Home';
 import SignUp from './Pages/Auth/SignUp';
 import FrontPage from './Pages/FrontPage/FrontPage';
 import Services from './Pages/Services/Services';
+import AboutUs from './Pages/AboutUs/AboutUs';
+import Login from './Pages/Auth/Login';
 
 const router = createBrowserRouter([
   {
     path: "/Login",
-    element: <Home />,
+    element: <Login />,
   },
   {
     path: "/Signup",
@@ -27,6 +29,11 @@ const router = createBrowserRouter([
     path: "/Services",
     element: <Services />,
   },
+  {
+    path: "/AboutUs",
+    element: <AboutUs />,
+  },
+
 
 
 
