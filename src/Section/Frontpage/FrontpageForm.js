@@ -1,10 +1,6 @@
-import React,{useState} from 'react'
-import { Box, Button, Card, CardMedia, Paper, TextField, Typography,IconButton} from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
-import InputAdornment from '@mui/material/InputAdornment';
-import LockIcon from '@mui/icons-material/Lock';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import React from 'react'
+import { Box, Button,Typography} from '@mui/material';
+import {Link} from 'react-router-dom';
 
 
 
@@ -18,7 +14,7 @@ function FrontpageForm() {
 
     <Box sx={{ width: '500%', maxWidth: 500,display:'flex',flexDirection:'column',marginLeft:-10 }}>
 
-    <Typography variant="h1" sx={{marginLeft:7,marginTop:5}}>
+    <Typography variant="h1" sx={{marginLeft:7,marginTop:7}}>
       Dive into a world of influence-
     </Typography>
     <Typography variant='h4' sx={{marginLeft:7,marginTop:3}}>
@@ -28,7 +24,8 @@ function FrontpageForm() {
     width:280,borderRadius:3,height:90,textAlign:'center',marginLeft:15,    '&:hover': {
       backgroundColor: 'white',
     },
-}}>GET STARTED </Button>
+}}><Link to='/Login' style={{textDecoration:'none',color:'inherit'}}>
+  GET STARTED </Link></Button>
 </Box>
         <Box
         component="img"

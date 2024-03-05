@@ -20,6 +20,8 @@ import TextField from '@mui/material/TextField';
 import EmailIcon from '@mui/icons-material/Email';
 import InputAdornment from '@mui/material/InputAdornment';
 import LockIcon from '@mui/icons-material/Lock';
+import { Link } from 'react-router-dom';
+
 
 
 const drawerWidth = '100%';
@@ -40,6 +42,7 @@ function Navbar(props) {
       </Typography>
       <Divider />
       <List>
+
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
@@ -79,8 +82,10 @@ function Navbar(props) {
             </Box>
             <Box sx={{ display: 'flex', gap: 8, paddingRight: 10 }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#000' }}>
+                <Button key={item} sx={{ color: '#000'}}>
+                  <Typography sx={{fontWeight:'medium'}}>
                   {item}
+                  </Typography>
                 </Button>
               ))}
             </Box>
@@ -88,6 +93,7 @@ function Navbar(props) {
         </AppBar>
       </Box>
       <nav>
+
         <Drawer
           container={container}
           variant="temporary"

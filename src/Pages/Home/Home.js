@@ -4,8 +4,7 @@ import { Box } from '@mui/material'
 import Login from '../Auth/Login'
 import SignUp from '../Auth/SignUp'
 import FrontPage from '../FrontPage/FrontPage'
-
-
+import Services from '../Services/Services'
 function Home() {
 
   return (
@@ -14,6 +13,8 @@ function Home() {
         <Login />
         <SignUp />
         <FrontPage/>
+        <Services />
+      
       
     </Box> 
   )
