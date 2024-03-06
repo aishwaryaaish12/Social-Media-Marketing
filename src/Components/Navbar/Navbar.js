@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -24,6 +24,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const drawerWidth = '100%';
 const navItems = ['HOME', 'SERVICES', 'ABOUT US', 'CONTACT US'];
 
@@ -31,9 +32,11 @@ function Navbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
+
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -56,7 +59,7 @@ function Navbar(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-
+  
   return (
     <>
       <Box sx={{ display: 'flex', backgroundColor: '#ABCDCD', overflow: 'hidden' }}>

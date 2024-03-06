@@ -14,6 +14,7 @@ import Login from './Pages/Auth/Login';
 import React from 'react';
 import FrontPage from './Pages/FrontPage/FrontPage';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import Business from './Pages/Business/Business';
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
     path: "/ContactUs",
     element: <ContactUs />,
   },
+  {
+    path: "/Business",
+    element: <Business />,
+  },
+
 
 
 
